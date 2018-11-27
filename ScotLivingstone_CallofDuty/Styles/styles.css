@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*remove default gaps*/
+body {
+	margin:0;
+	padding:0;
+	background-image:url(../Images/Background.jpg);
+	
+    
+}
+h1,h2,h3,h4,h5,h6{
+	color:blue; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif" ;
+}
+
+/*container will be 80% of page (white space)*/
+.container {
+	width:80%;
+	margin:0 auto;
+}
+
+/*width of banner will always be 100% of container*/
+.banner {
+	width:100%;
+}
+
+/*width of nav will always be 100% of container*/
+.navigation {
+	width:100%;
+	height:70px;
+	background:#1E1919 ;
+	font-size: 12pt;
+	top: 0;
+}
+
+/*pseudo class*/
+  a:link {color: white;}
+ a:visited {color: blue;}
+  a:hover {color: green;}
+   a:active {color: red;}
+   
+   
+.navigation ul {
+	margin: 0;
+	height: 50px;
+}
+.navigation li{
+	display: inline;
+}
+.navigation a {
+	color: #E9E9E9;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	padding: 24px;
+	font-weight: 600;
+	border-right: 1px solid #222222;
+}
+
+.article-half-left {
+	width:49%;
+	float:left;
+	margin-right:2%;
+	margin-top:20px;
+}
+
+.article-half-right {
+	width:49%;
+	float:left;
+	margin-top:20px;
+}
+
+.article-third-left {
+	width:30%;
+	float:left;
+	margin-right:5%;
+	margin-top:20px;
+}
+
+.article-third-right {
+	width:30%;
+	float:left;
+	margin-top:20px;
+}
+
+
+
+
+
+.footer {
+	width:100%;
+	background:#4B4A4A ;
+	
+	top: 0;
+}
+
+/*images will fill 100% of available space*/
+img {
+	width:100%;
+	height:auto;
+}
+#myBtn {
+	background:#666;
+    padding: 20px; 
+    border: 1px solid #000; 
+	font-size: 10px; 
+	font-weight: 500; 
+	color:#000  }
+#Btn {
+	background:#666;
+    padding: 20px; 
+    border: 1px solid #000; 
+	font-size: 10px; 
+	font-weight: 500; 
+	color:#000  }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.close {
+    color: Red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+}

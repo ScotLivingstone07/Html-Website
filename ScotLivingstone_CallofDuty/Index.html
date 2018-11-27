@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Index</title>
+
+<link href="Styles/normalise.css" rel="stylesheet" type="text/css">
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+     <style>
+         body {font-family: 'Open Sans', sans-serif;}
+     </style>
+     <SCRIPT LANGUAGE = "Javascript">
+var today= new Date()
+</SCRIPT>
+
+<BODY onload=alert(today)>
+<p id="msg"></p>
+<script type="text/javascript">
+var messageNum = 0;
+var m = document.getElementById("msg");
+function messageChanger() {
+if (messageNum == 0) {
+m.innerHTML = "Welcome to The call of duty website.";
+messageNum = 1;
+}
+else {
+m.innerHTML = "This website will show you all of the call of duty games that have created.";
+messageNum = 0;
+}
+}
+//first message
+messageChanger();
+//Schedule the next message
+setTimeout("messageChanger();", 1000);
+</script>
+</head>
+
+<body>
+<div class="container">
+<div class="banner">
+<img src="Images/call_of_duty_banner.jpg">
+
+</div>
+<div class="navigation">
+
+  <li><a href="index.html">Home</a></li>
+  <li><a href="Treyarch_Games.html">Treyarch</a></li>
+  <li><a href="Infinity_Ward_Games.html">Infinity Ward</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  
+</div>
+<div class="clearfix">
+<div class="article-half-left">
+ <img src="Images/Infinity-Ward.jpg" onmouseover=this.src="Images/Infinity-Ward2.jpg" onmouseout=this.src="Images/Infinity-Ward.jpg">
+<h2>Infinity Ward</h2><p>Click <a href="Infinity_Ward_Games.html">here</a> to see all of the Call of Duty games that Infinity Ward have created.
+
+</p>
+</div>
+<div class="article-half-right">
+ <img src="Images/Treyarch_logo.png" onmouseover=this.src="Images/treyarch2.jpg" onmouseout=this.src="Images/Treyarch_logo.png">
+ <h2>Treyarch</h2><p>Click <a href="Treyarch_Games.html">here</a> to see all of the Call of Duty games that Treyarch have created.
+</p>
+</div>
+<div class="article-half-left">
+ <img  src="Images/call of duty logo.png"><h2>Contact Us</h2><p>If you have any questions you would like to ask the company click <a href="Contact.html">here</a>.</p>
+</div>
+<div class="article-half-right">
+<iframe width="607" height="407" src="https://www.youtube.com/embed/3W6zV1_61VM" frameborder="0" allowfullscreen></iframe><h2>All Call of Duty games</h2><p>This video will show you all of the Call of Duty games that have been made
+<button id="myBtn">Find out more</button>
+<div id="myModal" class="modal">
+<div class="modal-content">
+<div class="modal-header">
+<span class="close">&times;</span><!--This will add a close button-->
+      <h2>All of the call of duty games</h2>
+
+</div>
+<div class="modal-body">
+<p>The video that you are about to watch will show you all the call of duty games that have been created. This video will will show you the fron cover of all the games that have been created enjoy.</p>
+</div>
+<div class="modal-footer">
+<h3>&copy; Call of Duty</h3> 
+
+</div>
+</div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script></p>
+
+</div>
+</div>
+<div class="footer clearfix">
+<div class="article-third-left">
+ <h4>Contact Us</h4>
+ <p>Tel:028 97 4626 4678</p>
+</div>
+
+<div class="article-third-right">
+<h4>Copyright</h4>
+<p>&copy; Call of Duty</p>
+
+</div>
+</div>
+</div>
+</body>
+</html>
